@@ -1,0 +1,26 @@
+{
+    "name": "proaudiogt",
+    "version": "1.0.0",
+    "description": "Website for proaudiogt.com",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/racifuina/proaudiogt.git"
+    },
+    "author": "Rigoberto Acifuina (@Rigo_Dev)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/racifuina/proaudiogt/issues"
+    },
+    "homepage": "https://github.com/racifuina/proaudiogt#readme",
+    "dependencies": {
+        "express": "^4.14.0",
+        "body-parser": "*",
+        "ejs": "*",
+        "express-session": "*",
+        "socket.io": "*"
+    }
+}
