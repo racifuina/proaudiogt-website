@@ -6,16 +6,16 @@ var io = require("socket.io")(http);
 var mensajesMonitor = [];
 app.use(express.static('public'));
 
-var HTTP_PORT = process.env.PORT || 8081;
+var HTTP_PORT = process.env.PORT || 8080;
 
 //home
 app.get('/', function (req, res) {
-    res.send("SITIO EN CONSTRUCCIÓN");
+    res.sendFile(__dirname + '/public/landing.html');
 });
 
 //404
 app.get('*', function (req, res) {
-    res.send("404");
+    res.sendFile(__dirname + '/public/404.html');;
 });
 
 //Socket.io Service
