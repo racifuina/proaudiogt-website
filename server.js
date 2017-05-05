@@ -5,7 +5,7 @@ var http = require("http").Server(app);
 //var io = require("socket.io")(http);
 app.use(express.static('public'));
 
-var HTTP_PORT = process.env.PORT || 8080;
+var HTTP_PORT = process.env.PORT || 8000;
 
 //home
 app.get('/', function (req, res) {
